@@ -1,0 +1,22 @@
+name: ElementsPlugin
+version: 1.0.0
+main: com.elements.ElementsPlugin
+api-version: '1.21'
+description: Four elements plugin with progression system
+
+commands:
+  ability:
+    description: Use your elemental ability
+    usage: /ability <element><level> (e.g. /ability fire1)
+  element:
+    description: Check your current element and level
+    usage: /element
+  elementadmin:
+    description: Admin commands for elements
+    usage: /elementadmin <set|reset> <player> [element]
+    permission: elements.admin
+
+permissions:
+  elements.admin:
+    description: Access to admin commands
+    default: op

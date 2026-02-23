@@ -1,0 +1,29 @@
+# ElementsPlugin Configuration
+
+# Kills required to level up (same for all elements)
+kills-to-level:
+  level-1-to-2: 3
+  level-2-to-3: 5
+  level-3: 10  # kills needed to reach level 3 from level 2... wait, level 3 IS max. This means 5 kills to reach lvl 2, 10 kills to reach lvl 3
+# Deaths before losing a level
+deaths-to-derank: 3
+
+# Cooldowns in seconds
+cooldowns:
+  ability1: 30
+  ability2: 60
+  ability3: 90
+
+# Element Change Gem recipe (uses Nether Star + 4 diamonds in a cross pattern)
+# You can modify the recipe in GemListener.java
+
+# Messages (support & color codes)
+messages:
+  element-assigned: "&6You have been assigned the &e%element% &6element!"
+  level-up: "&aYou leveled up to level &e%level%&a!"
+  level-down: "&cYou lost a level! You are now level &e%level%&c."
+  on-cooldown: "&cThis ability is on cooldown! &e%time%s &cremaining."
+  wrong-element: "&cThat is not your element!"
+  ability-locked: "&cYou need to be level &e%level% &cto use that ability!"
+  gem-used: "&6You have been reborn as a &e%element% &6elemental!"
+  gem-same-element: "&cThe gem cannot assign you the same element!"
